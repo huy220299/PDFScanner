@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_top"
+        android:background="@color/main_color"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/img_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Language: Latin"
+            android:lines="1"
+            android:fontFamily="@font/bold"
+            android:background="@drawable/background_textview_border_white"
+            app:layout_constraintTop_toTopOf="@id/img_back"
+            app:layout_constraintBottom_toBottomOf="@id/img_back"
+            app:layout_constraintStart_toEndOf="@id/img_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:id="@+id/tv_language"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/layout_contain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutDescription="@xml/activity_result_recognize_text_xml_layout_contain_scene"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom"
+        app:layout_constraintTop_toBottomOf="@id/layout_top">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/img_preview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/img_test"
+            app:layout_constraintHeight_percent=".4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/layout_result_text"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_height="0dp"
+            android:background="#F2F7FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_preview">
+
+            <EditText
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:fontFamily="@font/regular"
+                android:gravity="start"
+                android:background="@color/transparent"
+                android:text=""
+                android:textColor="@color/black" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:src="@drawable/img_button_hide_image"
+            app:altSrc="@drawable/img_button_show_image"
+            app:layout_constraintDimensionRatio="390:96"
+            app:layout_constraintEnd_toEndOf="@id/layout_result_text"
+            app:layout_constraintTop_toTopOf="@id/layout_result_text"
+            app:layout_constraintWidth_percent=".3" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="@dimen/_30sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/btn_recognize"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_10sdp">
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_recognize"/>
+            <TextView
+                android:id="@+id/tv_recognize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/semi_bold"
+                android:text="@string/recognize_again"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_copy"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_copy"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_copy"/>
+            <TextView
+                android:id="@+id/tv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/semi_bold"
+                android:text="Copy"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_export"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_export"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_export"/>
+            <TextView
+                android:id="@+id/tv_export"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/semi_bold"
+                android:text="@string/export"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

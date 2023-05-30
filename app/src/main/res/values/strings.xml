@@ -1,0 +1,116 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PDF Scanner</string>
+    <string name="action_ads">This action may contain ads</string>
+    <string name="save_folder">Save Folder</string>
+    <string name="save_bitmap_success">Saved!</string>
+    <string name="cant_save_bitmap">Can\'t save !</string>
+    <string name="des_premium"><![CDATA[If the themes is not unlocked after payment, You can go to \"Store > Restore\". You\'ll automatically be charged each renewal period depending on your subscription. You can unsubscribe at anytime.]]></string>
+    <string name="premium">Premium</string>
+    <string name="sample_cost">20$</string>
+    <string name="path_save_file_sample">/Documents/PDF Scanner/</string>
+    <string name="path_save_file">Default storage location</string>
+    <string name="storage_path">Storage path</string>
+    <string name="manual_crop_des">Turn on to adjust borders of images one by one</string>
+    <string name="manually_crop_images">Manually crop images</string>
+    <string name="batch_scan">Batch scan</string>
+    <string name="scan_setting">Scan Setting</string>
+    <string name="pdf_setting">PDF Settings</string>
+    <string name="sample_crop_option">A4</string>
+    <string name="pdf_page_orientation">PDF page orientation</string>
+    <string name="pdf_page_size">PDF page size</string>
+    <string name="sample_orientation_option">Auto</string>
+    <string name="pdfView_page_no">%1$d of %2$d</string>
+
+    <string name="allow">Allow</string>
+    <string name="_ok">OK</string>
+    <string name="_cancel">Cancel</string>
+    <string name="rate_app">Rate App</string>
+    <string name="love_app">We are working hard for a better user experience. We’d greatly appreciate if you can rate us.</string>
+    <string name="_yes">Yes</string>
+    <string name="feedback">Feedback</string>
+    <string name="no_file_des">Import images or scan with your camera to generate PDFs</string>
+    <string name="no_file_yet">No File Yet</string>
+    <string name="allow_scanner_pdf_tap_scanner_to_access_photo_media_and_files_on_your_device">Allow “Scanner PDF - Tap Scanner” to access photo, media and files on your device?</string>
+    <string name="all_photo">All Photo</string>
+    <string name="_import">Import</string>
+    <string name="next">Next</string>
+    <string name="auto_crop">Auto crop</string>
+    <string name="delete">Delete</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+    <string name="auto_crop_unable">No crop</string>
+    <string name="title">This is Title</string>
+    <string name="retake">Retake</string>
+    <string name="done">Done</string>
+    <string name="recognize">Recognize</string>
+    <string name="adjust">Adjust</string>
+    <string name="sample_title">Scanner PDF_11_25_2022</string>
+    <string name="home">Home</string>
+    <string name="recognize_again">Recognize again</string>
+    <string name="export">Export</string>
+    <string name="my_cache_folder">myCacheFolder</string>
+    <string name="my_signature_folder">SignatureImage</string>
+    <string name="korean">Korean</string>
+    <string name="japanese">Japanese</string>
+    <string name="devanagari">Devanagari</string>
+    <string name="chinese">Chinese</string>
+    <string name="latin">Latin</string>
+    <string name="language">Language</string>
+    <string name="no_text_found_des">Please check if the OCR language is corect and try again.</string>
+    <string name="doc_recognize">For precise recognition, keep the\nbackground clear.</string>
+    <string name="anti_counter">Anti-counterfeit</string>
+    <string name="transparent">Transparent</string>
+    <string name="size">Size</string>
+    <string name="text_">Text</string>
+    <string name="anti_counterfeit">Anti-counterfeit</string>
+    <string name="single_side">Single side</string>
+    <string name="both_side">Both side</string>
+    <string name="ocr">OCR</string>
+    <string name="id_card">ID Card</string>
+    <string name="back">Back</string>
+    <string name="gallery">Gallery</string>
+    <string name="docs">Docs</string>
+    <string name="passport">Passport</string>
+    <string name="number_1">1</string>
+    <string name="make_it_now">Make it now</string>
+    <string name="descending">Descending</string>
+    <string name="name">Name</string>
+    <string name="created">Created</string>
+    <string name="modified">Modified</string>
+    <string name="sort_by">Sort by</string>
+    <string name="ascending">Ascending</string>
+    <string name="share">Share</string>
+    <string name="des_share_file">Share the PDF with friends</string>
+    <string name="des_share_text">Share with friends as text</string>
+    <string name="printed">Printed</string>
+    <string name="file_info">File Infor</string>
+    <string name="details">Details</string>
+    <string name="snackbar_pdfCreated">PDF file is created</string>
+    <string name="remove_pages_error">remove pages error</string>
+    <string name="snackbar_viewAction">View!</string>
+    <string name="error_open_file">open error</string>
+    <string name="open_file">open file</string>
+    <string name="error_path_not_found">path not found</string>
+
+    <string name="pdf_ext" translatable="false">.pdf</string>
+    <string name="pdf_type" translatable="false">application/pdf</string>
+    <string name="txt_type" translatable="false">text/*</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="bundleKey">ImageUri</string>
+    <string name="whatsappToast">Sorry! Images could not be added. Please select the images from our **Select Images** option.</string>
+    <string name="successToast">Images successfully added.</string>
+    <!-- Share strings -->
+    <string name="share_chooser">Select app to send message…</string>
+    <!--file name suffix-->
+    <string name="pdf_suffix" translatable="false">_pdf</string>
+    <string name="reordering_pages_dialog">Reordering your pages...</string>
+    <string name="delete_alert_singular">Do you want to delete selected file?</string>
+    <string name="snackbar_files_deleted">Files Deleted</string>
+    <string name="lbl_recently_used">Recently Used Features</string>
+    <string name="snackbar_no_pdf_app">No app to read PDF File</string>
+    <string name="no_images_selected">No Image Selected!</string>
+    <string name="something_went_wrong" tools:ignore="ExtraTranslation">Something went wrong!</string>
+    <string name="modified_date">Modified date</string>
+    <string name="created_date">Created date</string>
+    <string name="signature">Signature</string>
+</resources>

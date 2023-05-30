@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_preview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_test"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="90:74"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_page_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_textview_page_size"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="5"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/img_preview"
+            app:layout_constraintEnd_toEndOf="@id/img_preview" />
+
+        <TextView
+            android:id="@+id/tv_name_file"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/semi_bold"
+            android:singleLine="true"
+            android:text="@string/sample_title"
+            android:textColor="@color/color_333333"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_preview"
+            app:layout_constraintTop_toTopOf="@id/img_preview" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/sample_cost"
+            android:textColor="@color/color_787878"
+            app:layout_constraintStart_toStartOf="@id/tv_name_file"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_file" />
+        <ImageView
+            android:id="@+id/img_select"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/ic_option"
+            app:layout_constraintBottom_toBottomOf="@id/img_preview"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintTop_toTopOf="@id/img_preview"  />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/ic_delete_file"
+            app:layout_constraintBottom_toBottomOf="@id/img_preview"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            app:tint="@color/main_color" />
+
+        <ImageView
+            android:id="@+id/img_duplicate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_duplicate"
+            app:layout_constraintBottom_toBottomOf="@id/img_preview"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/img_delete"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            app:tint="@color/main_color" />
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintBottom_toBottomOf="@id/img_preview"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/img_duplicate"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            app:tint="@color/main_color" />
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="@id/img_preview"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/img_share"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"
+            app:tint="@color/main_color" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_preview"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="@id/img_delete"
+            android:background="#DFE6EF"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

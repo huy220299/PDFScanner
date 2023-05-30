@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#ff59a9ff</color>
+    <color name="orange">#ffff900d</color>
+    <color name="bottom_background_color">#ffc4c2bc</color>
+
+    <color name="polygonViewCircleStrokeColor">#ff59a9ff</color>
+    <color name="polygonViewCircleBackground">#90e5f8ff</color>
+    <color name="color_9E9E9E">#9E9E9E</color>
+    <color name="main_color">#5979FF</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_787878">#787878</color>
+    <color name="color_A8A8A8">#A8A8A8</color>
+    <color name="color_FAFAFA">#FAFAFA</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_7C7C7C">#7C7C7C</color>
+
+    <color name="seek_bar_background">#ababab</color>
+    <color name="seek_bar_progress">#5979FF</color>
+    <color name="seek_bar_secondary_progress">#5979FF</color>
+</resources>

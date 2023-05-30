@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="500">
+        <OnClick motion:clickAction="transitionToEnd"
+            motion:targetId="@+id/view_click_2"/>
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@+id/start"
+        motion:constraintSetStart="@id/end"
+        motion:duration="500">
+        <OnClick motion:clickAction="transitionToEnd"
+            motion:targetId="@+id/view_click_1"/>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/indicator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/main_color"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="@id/btn_file"
+            motion:layout_constraintStart_toStartOf="@id/btn_file"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias=".37"
+            motion:layout_constraintWidth_percent=".1" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/indicator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/main_color"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="@id/btn_setting"
+            motion:layout_constraintStart_toStartOf="@id/btn_setting"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias=".37"
+            motion:layout_constraintWidth_percent=".1" />
+    </ConstraintSet>
+</MotionScene>
